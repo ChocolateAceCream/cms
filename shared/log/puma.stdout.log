@@ -1,0 +1,37 @@
+=== puma startup: 2017-07-06 14:00:23 -0400 ===
+[14776] * Starting control server on unix:///tmp/puma-status-1499364023310-14776
+[14776] - Worker 0 (pid: 14846) booted, phase: 0
+[14776] - Gracefully shutting down workers...
+[14776] === puma shutdown: 2017-07-06 14:01:08 -0400 ===
+[14776] - Goodbye!
+=== puma startup: 2017-07-06 14:01:20 -0400 ===
+[14877] * Starting control server on unix:///tmp/puma-status-1499364080806-14877
+[14877] - Worker 0 (pid: 14947) booted, phase: 0
+=== puma startup: 2017-07-06 16:36:28 -0400 ===
+[16483] * Starting control server on unix:///tmp/puma-status-1499373388584-16483
+Exiting
+=== puma startup: 2017-07-11 10:12:50 -0400 ===
+[14320] * Starting control server on unix:///tmp/puma-status-1499782370298-14320
+[14320] - Worker 0 (pid: 14333) booted, phase: 0
+[14320] - Gracefully shutting down workers...
+[14320] === puma shutdown: 2017-07-11 10:12:52 -0400 ===
+[14320] - Goodbye!
+Exiting
+=== puma startup: 2017-07-12 11:36:25 -0400 ===
+[20535] * Starting control server on unix:///tmp/puma-status-1499873785736-20535
+[20535] - Worker 0 (pid: 20548) booted, phase: 0
+Started GET "/" for 185.170.41.8 at 2017-07-12 11:36:44 -0400
+Cannot render console from 185.170.41.8! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SqlTemplatesController#index as HTML
+  Rendering sql_templates/index.html.erb within layouts/application
+  [1m[36mSqlTemplate Load (42.2ms)[0m  [1m[34mSELECT "sql_templates".* FROM "sql_templates"[0m
+  Rendered sql_templates/index.html.erb within layouts/application (376.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 743ms (Views: 676.3ms | ActiveRecord: 42.7ms)
+
+
+[20535] - Gracefully shutting down workers...
+[20535] === puma shutdown: 2017-07-12 11:37:00 -0400 ===
+[20535] - Goodbye!
+Exiting

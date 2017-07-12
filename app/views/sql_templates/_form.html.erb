@@ -1,0 +1,62 @@
+<%= form_for(sql_template, html: {class: 'form-horizontal'}) do |f| %>
+    <% if sql_template.errors.any? %>
+    <div id="error_explanation">
+    <h2><%= pluralize(sql_template.errors.count, "error") %> prohibited this sql_template from being saved:</h2>
+
+    <ul>
+        <% sql_template.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+    <% end %>
+    </ul>
+</div>
+  <% end %>
+<div class="form-group">
+    <%= f.label :body, class: 'col-sm-2 control-label' %>
+
+    <div class="col-md-8">
+        <%= f.text_area :body, class: "form-control", rows: '5', placeholder: "Enter the HTML codes here..."%>
+    </div>
+
+</div>
+
+<div class="form-group">
+    <%= f.label :path, class: 'col-sm-2 control-label' %>
+    <div class="col-md-8">
+        <%= f.text_field :path, class: "form-control", placeholder: "Enter the path here... "%>
+    </div>
+</div>
+
+<div class="form-group">
+    <%= f.label :format, class: 'col-sm-2 control-label' %>
+    <div class="col-md-8">
+        <%= f.text_field :format, class: "form-control", placeholder: "Enter the format of template here: e.g. html "%>
+    </div>
+</div>
+
+<div class="form-group">
+    <%= f.label :locale, class: 'col-sm-2 control-label' %>
+    <div class="col-md-8">
+        <%= f.text_field :locale, class: "form-control", placeholder: "Enter the locale of template here: e.g. en "%>
+    </div>
+</div>
+<div class="form-group">
+    <%= f.label :handler, class: 'col-sm-2 control-label' %>
+    <div class="col-md-8">
+        <%= f.text_field :handler, class: "form-control", placeholder: "Enter the handler of template here: e.g. erb "%>
+    </div>
+</div>
+<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox-inline">
+            <%= f.check_box :partial %>
+            <%= f.label :partial, "Check if template has partial" %>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-offset-2 col-sm-10">
+    <div class="actions">
+        <%= f.submit :Submit, class: "btn btn-success" %>
+    </div>
+</div>
+<% end %>

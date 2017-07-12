@@ -1,0 +1,33 @@
+=== puma startup: 2017-07-06 14:00:23 -0400 ===
+=== puma startup: 2017-07-06 14:01:20 -0400 ===
+=== puma startup: 2017-07-06 16:36:28 -0400 ===
+/home/ubuntu/.rvm/gems/ruby-2.3.0/gems/puma-3.8.2/lib/puma/cluster.rb:126:in `fork': Cannot allocate memory - fork(2) (Errno::ENOMEM)
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/puma-3.8.2/lib/puma/cluster.rb:126:in `block in spawn_workers'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/puma-3.8.2/lib/puma/cluster.rb:122:in `times'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/puma-3.8.2/lib/puma/cluster.rb:122:in `spawn_workers'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/puma-3.8.2/lib/puma/cluster.rb:447:in `run'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/puma-3.8.2/lib/puma/launcher.rb:172:in `run'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/puma-3.8.2/lib/rack/handler/puma.rb:64:in `run'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/server.rb:296:in `start'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.1/lib/rails/commands/server.rb:79:in `start'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:90:in `block in server'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:85:in `tap'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:85:in `server'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.1/lib/rails/commands/commands_tasks.rb:49:in `run_command!'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/railties-5.0.1/lib/rails/commands.rb:18:in `<top (required)>'
+	from /home/ubuntu/crafting_rails4/chpt3/templater/bin/rails:25:in `require'
+	from /home/ubuntu/crafting_rails4/chpt3/templater/bin/rails:25:in `<top (required)>'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/client/rails.rb:28:in `load'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/client/rails.rb:28:in `call'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/client/command.rb:7:in `call'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/client.rb:30:in `run'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/bin/spring:49:in `<top (required)>'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/binstub.rb:31:in `load'
+	from /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/spring-2.0.1/lib/spring/binstub.rb:31:in `<top (required)>'
+	from /home/ubuntu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:68:in `require'
+	from /home/ubuntu/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:68:in `require'
+	from /home/ubuntu/crafting_rails4/chpt3/templater/bin/spring:15:in `<top (required)>'
+	from bin/rails:3:in `load'
+	from bin/rails:3:in `<main>'
+=== puma startup: 2017-07-11 10:12:50 -0400 ===
+=== puma startup: 2017-07-12 11:36:25 -0400 ===

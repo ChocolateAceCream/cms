@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+begin
+  load File.expand_path('../spring', __FILE__)
+rescue LoadError => e
+  raise unless e.message.include?('spring')
+end
+APP_PATH = File.expand_path('../config/application', __dir__)
+require_relative '../config/boot'
+=begin
+#change default port
+require 'rails/commands/server'
+
+module DefaultOptions
+
+  def default_options
+
+    super.merge!(Port: 4000) if Rails.env.development?
+
+  end
+
+end
+
+Rails::Server.send(:prepend, DefaultOptions)
+=end
+require 'rails/commands'
